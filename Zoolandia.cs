@@ -7,29 +7,36 @@ namespace ConsoleApplication
     {
          public static void Main(string[] args)
         {
-            var RedPanda = new AilurusFulgens();
-            RedPanda.name = "Rosco";
-            RedPanda.size = "small";
-            RedPanda.color = "whachu think";
-            RedPanda.UniqueAttribute = "raccoon like tail";
+            var newAnimal = new Animal();
+            newAnimal.name = "Test This Name";
+            newAnimal.funimals();
 
-            var Elephant = new Elephant();
-            Elephant.name = "Dumbo";
-            Elephant.size = "enormous";
-            Elephant.color = "gray";
-            Elephant.UniqueAttribute = "trunk for a nose";
+            var newRedPanda = new AilurusFulgens();
+            newRedPanda.name = "Rosco";
+            newRedPanda.size = "small";
+            newRedPanda.color = "whachu think";
+            newRedPanda.UniqueAttribute = "raccoon like tail";
+            newRedPanda.funimals();
 
-            var Lion = new Lion();
-            Lion.name = "Simba";
-            Lion.size = "large";
-            Lion.color = "tan/brown";
-            Lion.UniqueAttribute = "mane";
+            //Console.WriteLine($"this cute RedPanda's name is {newRedPanda.name} and is relativily {newRedPanda.size} and its color issss {newRedPanda.color} and has a {newRedPanda.UniqueAttribute}");
 
-          Console.WriteLine($"this cute RedPanda's name is {RedPanda.name} and is relativily {RedPanda.size} and its color issss {RedPanda.color} and has a {RedPanda.UniqueAttribute}");
+            var newElephant = new Elephant();
+            newElephant.name = "Dumbo";
+            newElephant.size = "enormous";
+            newElephant.color = "gray";
+            newElephant.UniqueAttribute = "trunk for a nose";
+            newElephant.funimals();
 
-          Console.WriteLine($"this cute Elephant's name is {Elephant.name} and is relativily {Elephant.size} and its color issss {Elephant.color} and has a {Elephant.UniqueAttribute}");
+           //Console.WriteLine($"this cute Elephant's name is {newElephant.name} and is relativily {newElephant.size} and its color issss {newElephant.color} and has a {newElephant.UniqueAttribute}");
 
-          Console.WriteLine($"this cute Lion's name is {Lion.name} and is relativily {Lion.size} and its color issss {Lion.color} and has a {Lion.UniqueAttribute}");
+            var newLion = new Lion();
+            newLion.name = "Simba";
+            newLion.size = "large";
+            newLion.color = "tan/brown";
+            newLion.UniqueAttribute = "mane";
+            newLion.funimals();
+
+            //Console.WriteLine($"this cute newLion's name is {newLion.name} and is relativily {newLion.size} and its color issss {newLion.color} and has a {newLion.UniqueAttribute}");
         }
     }
 }
